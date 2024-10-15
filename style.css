@@ -1,70 +1,132 @@
-*{
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+/* Body Styles */
+body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right ,#07F773, #ffffff);
+    background: linear-gradient(to right, #07F773, #ffffff);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* About Us Section */
 .part1-aboutus {
     display: flex;
     justify-content: left;
     width: 100%;
-    max-height:min-content;
+    max-height: min-content;
 }
 
-.part1-text{
+/* Text Section */
+.part1-text {
     flex: 1;
     min-width: 50%;
     background-color: transparent;
     display: flex;
-    align-items: left;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-end;
+    align-items: flex-end;
 }
-.part1-text h1{
+
+.part1-text h1 {
     width: 80%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     margin-bottom: 40px;
 }
-.part1-text p{
+
+.part1-text p {
     width: 80%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2;
 }
-.btn-class{
-    margin-top: 20px;
+
+/* Button Section */
+.btn-class {
+    margin-top: 40px;
     width: 80%;
     display: flex;
-    align-content:flex-start;
+    justify-content: flex-start;
 }
-.btn-transfer{
+
+.btn-transfer {
     display: block;
     padding: 15px;
     background-color: #B8EACF;
     color: #046785;
     border-color: #046785;
     margin-top: 20px;
+    justify-content: flex-end;
 }
 
-.part1-imag{
+button a {
+    text-decoration: none;
+    color: #046785;
+}
+
+/* Image Section */
+.part1-imag {
     flex: 1;
     min-width: 50%;
     background-color: transparent;
 }
-.part1-imag img{
+
+.part1-imag a { /* Ensure that the anchor tag does not affect the image size */
+    display: block;
+    width: 100%; /* Set width to the container */
+}
+
+.part1-imag img {
     max-width: 100%;
     height: auto;
     max-height: 500px;
+    object-fit: cover; /* Ensures consistent image scaling */
+    transition: transform 0.3s ease; /* Optional hover effect */
 }
-.btn-transfer{
-    padding: 15px;
-    background-color: #B8EACF;
-    color: #046785;
-    border-color: #046785;
-    justify-content: flex-end;
+
+.part1-imag a:hover img {
+    transform: scale(1.05); /* Optional: Adds zoom on hover */
+}
+
+/* Paragraph with Line */
+#paragraphe-line {
+    padding-left: 30px;
+    border-left: 5px solid #046785;
+}
+
+/* Box Slides Section */
+.box-slides {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.box-slides a {
+    width: 20%; /* Set the size of the clickable area to match the images */
+}
+
+.box-slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Portfolio Section */
+.box-portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.box-portfolio h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #07F773;
+    padding: 20px;
 }
