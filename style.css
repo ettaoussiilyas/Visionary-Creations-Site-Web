@@ -11,6 +11,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.content-holder{
+    width: 100%;
+}
 
 /* About Us Section */
 .part1-aboutus {
@@ -59,6 +62,7 @@ body {
     color: #046785;
     border-color: #046785;
     margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: flex-end;
 }
 
@@ -214,4 +218,35 @@ hr{
 footer{
     background: #333333;
     overflow: hidden;
+}
+@media(min-width: 400px){
+    .content-holder{
+        max-width: 380px;
+    }
+}
+@media(min-width: 576px){
+    .content-holder{
+        max-width: 540px;
+    }
+}
+@media(min-width: 768px){
+    .content-holder{
+        max-width: 720px;
+
+    }
+}
+@media(min-width: 992px){
+    .content-holder{
+        max-width: 960px;
+    }
+}
+@media(min-width: 1200px){
+    .content-holder{
+        max-width: 1140px;
+    }
+}
+@media(min-width: 1400px){
+    .content-holder{
+        max-width: 100%;
+    }
 }
