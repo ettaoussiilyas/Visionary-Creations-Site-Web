@@ -113,7 +113,7 @@ footer{
     align-items: center;
 }
 .card{
-    width: 55.555%;
+    width: 40%;
     height: 500px;
     background-color: white;
     border-radius: 10px;
@@ -122,11 +122,13 @@ footer{
     justify-content: center;
     text-align: center;
     padding: 10px;
+    margin: 60px;
     
 }
 .card input, .card textarea {
-    width: 98%;
+    width: 80%;
     padding: 10px;
+    margin: auto;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -138,12 +140,14 @@ footer{
   }
   
   .card button[type="submit"] {
+    width: 120px;
     background-color: #07F773;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: auto;
   }
   
   .card button[type="submit"]:hover {
