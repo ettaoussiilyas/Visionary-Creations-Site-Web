@@ -117,19 +117,7 @@ button a {
     transition: transform 0.3s ease;
 }
 
-/* Portfolio Section */
-.box-portfolio {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-}
-
-.box-portfolio h2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #07F773;
-    padding: 20px;
-}
+/* header */
 header{
     display: flex;
     justify-content: space-between;
