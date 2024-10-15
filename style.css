@@ -98,7 +98,54 @@ header{
 .current{
     color:black !important;
 }
-a:hover{
+.choices div a:hover{
     border-bottom: 2px solid black;
     transition: 0.5s;
-  }
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.right li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: underline;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    margin-left: 20px;
+}
+hr{
+    margin: 10px 0px 10px 0px;
+    border: 1px solid white;
+}
+.banner h4{
+    margin-bottom: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left img{
+    padding: 20px;
+}
