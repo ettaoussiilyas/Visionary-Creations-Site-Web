@@ -61,45 +61,57 @@ header{
     padding: 60px 10px;
 }
 
-
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, auto); /* auto makes the columns fit the content */
-  grid-gap: 20px;
-  justify-content: center; /* To center the cards horizontally */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Flexible layout for three columns */
+    grid-gap: 20px;
+    justify-items: center; /* Center items horizontally in their grid cells */
+    align-items: start; /* Align items to the top of the grid cells */
 }
 
 .card {
-  border: 2px solid black;
-  padding: 10px;
-  text-align: center;
-  width: 250px; /* Ensures the card's width adjusts to its content */
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #046785;
+    border: 2px solid black;
+    padding: 10px; /* Padding to give space within the card */
+    text-align: center;
+    width: 250px; /* Fixed width for the card */
+    height: 250px; /* Fixed height to maintain circular shape */
+    border-radius: 50%; /* Makes the card circular */
+    overflow: hidden;
+    background: linear-gradient(to right, #046785, #87e89e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: auto; /* Center the card in its grid cell */
 }
 
-.card-logo {
-  width: 100%;
-  height: 800px;
+.card img {
+    width: 60%; /* Set to a percentage to fit inside the circle */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 100px; /* Set a maximum height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px; /* Space below the image */
+    margin-top: 10px;
 }
 
 .card-title {
-  width: 100%;
-  font-size: 24px;
-  margin-top: 10px;
-  color: #07F773;
+    font-size: 18px;
+    margin: 5px 0; /* Adjusted margin for spacing */
+    color: #07F773;
+    text-align: center;
 }
 
 .card-description {
-  font-size: 14px;
-  margin-top: 10px;
-  width: 60%;
-  margin: auto;
-  color: white;
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px; /* Added margin for spacing */
+    width: 80%; /* Adjusted width for better fitting */
+    color: white;
+    text-align: center;
+    padding: 0 5px; /* Added padding for better text alignment */
 }
-.card img {
-  width: 100%;
-  height: 100px;
+.card:hover {
+    transform: translateY(-10px); /* Move the card up on hover */
 }
+
 /* end here of section card */
