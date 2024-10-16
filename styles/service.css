@@ -54,3 +54,36 @@ header{
     border-bottom: 2px solid black;
     transition: 0.1s;
 }
+
+/* start here of section card */
+.cards-section {
+    padding: 20px;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .card {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  

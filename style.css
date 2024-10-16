@@ -220,33 +220,33 @@ footer{
     overflow: hidden;
 }
 @media(min-width: 400px){
-    .content-holder{
+    body{
         max-width: 380px;
     }
 }
 @media(min-width: 576px){
-    .content-holder{
+    body{
         max-width: 540px;
     }
 }
 @media(min-width: 768px){
-    .content-holder{
+    body{
         max-width: 720px;
 
     }
 }
 @media(min-width: 992px){
-    .content-holder{
+    body{
         max-width: 960px;
     }
 }
 @media(min-width: 1200px){
-    .content-holder{
+    body{
         max-width: 1140px;
     }
 }
 @media(min-width: 1400px){
-    .content-holder{
+    body{
         max-width: 100%;
     }
 }
