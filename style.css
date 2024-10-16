@@ -219,7 +219,7 @@ footer{
     background: #333333;
     overflow: hidden;
 }
-@media(min-width: 400px){
+/* @media(min-width: 400px){
     body{
         max-width: 380px;
     }
@@ -249,4 +249,4 @@ footer{
     body{
         max-width: 100%;
     }
-}
+} */
