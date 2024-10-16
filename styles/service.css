@@ -111,7 +111,7 @@ header{
     padding: 0 5px; /* Added padding for better text alignment */
 }
 .card:hover {
-    transform: translateY(-8px); /* Move the card up on hover */
+    transform: translateY(-10px); /* Move the card up on hover */
 }
 
 /* end here of section card */
