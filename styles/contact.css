@@ -14,47 +14,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    align-items: center;
-    font-size: large;
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.choices {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
 
-.choices div {
-    padding: 10px;
-    margin-left: 20px; /* Reduced for better spacing on smaller screens */
-    color: #07F773;
-}
-
-.choices div a {
-    text-decoration: none;
-    color: #07F773;
-    position: relative;
-}
-
-.current {
-    color: black !important;
-}
-
-.choices div a:hover {
-    border-bottom: 2px solid black;
-    transition: 0.1s;
-}
-
-/* Contact Container Styles */
-.contact-container {
+.contact-container{
     background-image: url("/images/buildings.jpg");
     background-size: cover;
     background-position: center;
@@ -113,24 +75,6 @@ header {
     color: #333;
 }
 
-/* Footer Styles */
-footer {
-    background: linear-gradient(to right, #07F773, #ffffff);
-    overflow: hidden;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
