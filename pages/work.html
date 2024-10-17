@@ -25,16 +25,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    
+    <header>
+    <nav style="flex-direction: row;">
+        <input type="checkbox" id="nav-toggle">
+        <div class="logo">
+            <img src="../images/logo_site.png" alt="Visionary Creations Logo" style="height:150px;object-fit:cover">
+        </div>
+       <ul class="links">
+           <li><a class="anchors"  href="/">Home</a></li>
+           <li><a class="anchors" href="/pages/services.html">Services</a></li>
+           <li><a class="anchors" href="/pages/work.html">Work</a></li>
+           <li><a class="anchors" href="/pages/contact.html" class="active">Contact</a></li>
+       </ul>
+       <label for="nav-toggle" class="icon-burger">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+       </label>
+    </nav>
+</header>
     <section class="work-section">
       <div class="work-info">
         <h1 class="info-sec">We help Simplify the process</h1>
         <p class="body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, porro!
-          Animi a tempora, ducimus obcaecati quod ullam explicabo eius dolorum.
-          Minima esse facere quis perferendis officia, excepturi sapiente sequi
-          tempora ullam aperiam aliquam magni quod vero animi consectetur
-          asperiores reprehenderit.
+            The intuitive way for agencies and enterprises to design exceptional sites, with full-stack business solutions, multi-site management and built-in AI.<br>
+            Visionary Creations offers scalable solutions including account-level analytics, SSO, and shared content collections as well as services like custom development and dedicated success managers.
         </p>
       </div>
       <div class="work-img">
@@ -177,10 +192,11 @@
           </div>
         </div>
         <div class="work-right">
-          <img
+          <img class="work-img"
             src="https://static.wixstatic.com/media/ee1397_41d55214b54d4eeaaa23d388a26a6429~mv2.jpg/v1/fill/w_475,h_374,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/desktop.jpg"
             alt=""
           />
+          <img class="work-img" src="https://static.wixstatic.com/media/ed8633_bfca13545a2e4b7a8af13ece12bccf4c~mv2.jpg/v1/fill/w_691,h_390,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0001.jpg" alt="">
         </div>
       </section>
       <section class="section creating-content">
@@ -309,16 +325,6 @@
 	</g>
 </g>
 </svg>
-
-
-
-
-
-
-
-
-
-
 </svg>
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -337,5 +343,4 @@
     </div>
     
   </body>
-  <script src="./js/statsAnimated.js"></script>
 </html>
