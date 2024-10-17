@@ -25,28 +25,24 @@
   </head>
   <body>
     <header>
-      <nav>
+    <nav style="flex-direction: row;">
+        <input type="checkbox" id="nav-toggle">
         <div class="logo">
-          <img
-            src="../images/logo_site.png"
-            alt=""
-            style="
-              width: 250px;
-              height: 85px;
-              margin: 0;
-              padding: 0;
-              object-fit: cover;
-            "
-          />
+            <img src="../images/logo_site.png" alt="Visionary Creations Logo" style="height:150px;object-fit:cover">
         </div>
-      </nav>
-      <nav class="choices">
-        <div><a href="../index.html">Home</a></div>
-        <div><a href="services.html">Services</a></div>
-        <div><a href="work.html"  class="current">Work</a></div>
-        <div><a href="contact.html">Contact</a></div>
-      </nav>
-    </header>
+       <ul class="links">
+           <li><a class="anchors"  href="/">Home</a></li>
+           <li><a class="anchors" href="/pages/services.html">Services</a></li>
+           <li><a class="anchors" href="/pages/work.html">Work</a></li>
+           <li><a class="anchors" href="/pages/contact.html" class="active">Contact</a></li>
+       </ul>
+       <label for="nav-toggle" class="icon-burger">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+       </label>
+    </nav>
+</header>
     <section class="work-section">
       <div class="work-info">
         <h1 class="info-sec">We help Simplify the process</h1>
@@ -195,10 +191,11 @@
           </div>
         </div>
         <div class="work-right">
-          <img
+          <img class="work-img"
             src="https://static.wixstatic.com/media/ee1397_41d55214b54d4eeaaa23d388a26a6429~mv2.jpg/v1/fill/w_475,h_374,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/desktop.jpg"
             alt=""
           />
+          <img class="work-img" src="https://static.wixstatic.com/media/ed8633_bfca13545a2e4b7a8af13ece12bccf4c~mv2.jpg/v1/fill/w_691,h_390,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0001.jpg" alt="">
         </div>
       </section>
       <section class="section creating-content">
@@ -327,16 +324,6 @@
 	</g>
 </g>
 </svg>
-
-
-
-
-
-
-
-
-
-
 </svg>
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -351,51 +338,5 @@
 
       </section>
     </div>
-    <footer style="margin: 0;">
-    </div>
-    <footer>
-
-      <div class="container">
-        <div class="left">
-          <h4>Where to Find Us?</h4>
-          <img src="../images/map.png" alt="map" width="90%" height="100%" />
-        </div>
-      </div>
-      <div class="banner">
-        <img
-          class="social"
-          src="../images/facebook.svg"
-          alt="facebook"
-          width="44px"
-          height="41px"
-        />
-        <img
-          class="social"
-          src="../images/instagram.svg"
-          alt="instagram"
-          width="44px"
-          height="41px"
-        />
-        <img
-          class="social"
-          src="../images/twitter.svg"
-          alt="twitter"
-          width="44px"
-          height="41px"
-        />
-        <img
-          class="social"
-          src="../images/pinterest.svg"
-          alt="pinterest"
-          width="44px"
-          height="41px"
-        />
-      </div>
-      <hr />
-      <div class="banner">
-        <h4>Made With Love By Lorenz Cipher</h4>
-      </div>
-    </footer>
   </body>
-  <script src="./js/statsAnimated.js"></script>
 </html>
