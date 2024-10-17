@@ -595,7 +595,7 @@ p.body {
 #platform-description {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  /* max-width: 40%; */
 }
 
 .platform {
@@ -753,7 +753,10 @@ button {
 /* Media Queries */
 
 /* For devices with a max width of 1200px (Tablets and smaller screens) */
-@media (max-width: 1200px) {
+@media (max-width: 1124px) {
+  .section {
+    height: fit-content;
+  }
   .work-section {
     flex-direction: column;
     height: auto;
@@ -786,15 +789,43 @@ button {
   .platform-section {
     flex-direction: column;
   }
-
+  /* 
   .work-left,
   .work-right {
     width: 100%;
     height: auto;
+  } */
+
+  .work-left {
+    width: 60%;
+  }
+  .work-right {
+    /* width: 40%; */
+    min-height: 180%;
+    border: 6px solid black;
+    display: flex;
+    justify-content: center;
+  }
+
+  .creating-content {
+    padding: 0;
+  }
+  .content-container {
+    max-width: 90%;
+  }
+  .body-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .body-container p.body {
+    font-size: 22px;
+  }
+  .section-container {
+    padding: 20px;
+    flex-direction: column;
   }
 
   .collab-section {
-    flex-direction: column;
     align-items: center;
   }
 
@@ -809,6 +840,9 @@ button {
   header {
     height: auto;
   }
+  .section {
+    height: fit-content;
+  }
 
   .choices {
     flex-direction: column;
@@ -816,7 +850,7 @@ button {
   }
 
   .examples-description {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -837,6 +871,42 @@ button {
   button.get-started {
     width: 80%;
     padding: 12px;
+  }
+
+  .workflow-section {
+    flex-direction: column;
+  }
+
+  .workflow-section .description {
+    margin-bottom: 0;
+  }
+
+  img.work-img {
+    margin: 20px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .platform {
+    margin: 0;
+  }
+  .creating-content {
+    padding: 0;
+  }
+  .content-container {
+    max-width: 90%;
+  }
+
+  .section-container {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .section-title {
+    /* min-width: 40%; */
+  }
+
+  .collab-section {
+    margin-top: 20px;
+    flex-direction: row;
   }
 
   footer {
@@ -867,37 +937,4 @@ button {
     width: 30px;
     height: 30px;
   }
-}
-
-/* Hide the original navigation on small screens */
-@media (max-width: 768px) {
-  .choices {
-    display: none; /* Hide the original nav links */
-  }
-
-  .burger-menu {
-    display: flex; /* Show the burger menu */
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin: 10px; /* Add margin for better spacing */
-  }
-}
-
-/* Show the nav links when the burger menu is checked */
-input[type="checkbox"]:checked ~ .choices {
-  display: flex; /* Display the nav links */
-  flex-direction: column; /* Stack links vertically */
-  position: absolute; /* Position it over content */
-  top: 50px; /* Adjust according to your layout */
-  left: 0;
-  right: 0;
-  background-color: white; /* Background color for dropdown */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
-  z-index: 1000; /* Ensure it appears above other content */
-}
-
-.choices div {
-  padding: 10px; /* Add padding to links */
-  text-align: center; /* Center align the text */
 }
