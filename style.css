@@ -219,34 +219,3 @@ footer{
     background: #333333;
     overflow: hidden;
 }
-/* @media(min-width: 400px){
-    body{
-        max-width: 380px;
-    }
-}
-@media(min-width: 576px){
-    body{
-        max-width: 540px;
-    }
-}
-@media(min-width: 768px){
-    body{
-        max-width: 720px;
-
-    }
-}
-@media(min-width: 992px){
-    body{
-        max-width: 960px;
-    }
-}
-@media(min-width: 1200px){
-    body{
-        max-width: 100%;
-    }
-}
-@media(min-width: 1400px){
-    body{
-        max-width: 100%;
-    }
-} */
