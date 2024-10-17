@@ -1,252 +1,221 @@
 /* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #07F773, #ffffff);
-    background-size: cover;
-    background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #07f773, #ffffff);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.content-holder{
-    width: 100%;
+.content-holder {
+  width: 100%;
 }
 
 /* About Us Section */
 .part1-aboutus {
-    display: flex;
-    justify-content: left;
-    width: 100%;
-    max-height: min-content;
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  max-height: min-content;
 }
 
 /* Text Section */
 .part1-text {
-    flex: 1;
-    min-width: 50%;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+  flex: 1;
+  min-width: 50%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .part1-text h1 {
-    width: 80%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    margin-bottom: 40px;
+  width: 80%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin-bottom: 40px;
 }
 
 .part1-text p {
-    width: 80%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 2;
+  width: 80%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2;
 }
 
 /* Button Section */
 .btn-class {
-    margin-top: 40px;
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
+  margin-top: 40px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .btn-transfer {
-    display: block;
-    padding: 15px;
-    background-color: #B8EACF;
-    color: #046785;
-    border-color: #046785;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: flex-end;
+  display: block;
+  padding: 15px;
+  background-color: #b8eacf;
+  color: #046785;
+  border-color: #046785;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: flex-end;
 }
 
 button a {
-    text-decoration: none;
-    color: #046785;
+  text-decoration: none;
+  color: #046785;
 }
 
 /* Image Section */
 .part1-imag {
-    flex: 1;
-    min-width: 50%;
-    background-color: transparent;
+  flex: 1;
+  min-width: 50%;
+  background-color: transparent;
 }
 
-.part1-imag a { /* Ensure that the anchor tag does not affect the image size */
-    display: block;
-    width: 100%; /* Set width to the container */
+.part1-imag a {  /* Ensure that the anchor tag does not affect the image size */
+  display: block;
+  width: 100%; /* Set width to the container */
 }
 
 .part1-imag img {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover; /* Ensures consistent image scaling */
-    transition: transform 0.3s ease; /* Optional hover effect */
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover; /* Ensures consistent image scaling */
+  transition: transform 0.3s ease; /* Optional hover effect */
 }
 
 .part1-imag a:hover img {
-    transform: scale(1.05); /* Optional: Adds zoom on hover */
+  transform: scale(1.05); /* Optional: Adds zoom on hover */
 }
 
 /* Paragraph with Line */
 #paragraphe-line {
-    padding-left: 30px;
-    border-left: 5px solid #046785;
+  padding-left: 30px;
+  border-left: 5px solid #046785;
 }
 
 /* Box Slides Section */
 .box-slides {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .box-slides a {
-    width: 20%; /* Set the size of the clickable area to match the images */
+  width: 20%; /* Set the size of the clickable area to match the images */
 }
 
 .box-slides img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
-.box-frame-video{
-    width: 100%;
-    max-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    overflow: hidden;
+.box-frame-video {
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
 }
 .box-frame-video iframe {
-    width: 560px;
-    height: 315px; 
-    margin: auto;
-    border: none;
-    margin : 100px 0px 150px
+  width: 560px;
+  height: 315px;
+  margin: auto;
+  border: none;
+  margin: 100px 0px 150px;
 }
 
 /* header */
-header{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 10px 0px;
-    font-size: large;
-    font-weight: bolder;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 0px;
+  font-size: large;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.choices{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+.choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
-.choices div{
-    padding: 10px;
-    margin-left: 50px;
-    color:#07F773;
-}
-
-.choices div a{
-    text-decoration: none;
-    color: #07F773;
-    position: relative;
-}
-.current{
-    color:black !important;
-}
-.choices div a:hover{
-    border-bottom: 2px solid black;
-    transition: 0.1s;
+.choices div {
+  padding: 10px;
+  margin-left: 50px;
+  color: #07f773;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.choices div a {
+  text-decoration: none;
+  color: #07f773;
+  position: relative;
 }
-.left{
-    max-height: 300px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
+.current {
+  color: black !important;
 }
-.banner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.social{
-    margin-left: 20px;
-    margin-top: 40px
-}
-hr{
-    margin: 10px 0px 10px 0px;
-    border: 1px solid white;
-}
-.banner h4{
-    margin-bottom: 20px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.left h4{
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-.left img, .container, .left{
-    overflow: hidden !important;
+.choices div a:hover {
+  border-bottom: 2px solid black;
+  transition: 0.1s;
 }
 
-footer{
-    background: #333333;
-    overflow: hidden;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-/* @media(min-width: 400px){
-    body{
-        max-width: 380px;
-    }
+.left {
+  max-height: 300px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }
-@media(min-width: 576px){
-    body{
-        max-width: 540px;
-    }
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-@media(min-width: 768px){
-    body{
-        max-width: 720px;
+.social {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+hr {
+  margin: 10px 0px 10px 0px;
+  border: 1px solid white;
+}
+.banner h4 {
+  margin-bottom: 20px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left h4 {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.left img, .container, .left {
+  overflow: hidden !important;
+}
 
-    }
+footer {
+  background: #333333;
+  overflow: hidden;
 }
-@media(min-width: 992px){
-    body{
-        max-width: 960px;
-    }
-}
-@media(min-width: 1200px){
-    body{
-        max-width: 100%;
-    }
-}
-@media(min-width: 1400px){
-    body{
-        max-width: 100%;
-    }
-} */
