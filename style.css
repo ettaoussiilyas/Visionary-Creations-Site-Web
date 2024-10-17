@@ -137,85 +137,53 @@ button a {
   margin: 100px 0px 150px;
 }
 
-/* header */
-header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 10px 0px;
-  font-size: large;
-  font-weight: bolder;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.choices {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-.choices div {
-  padding: 10px;
-  margin-left: 50px;
-  color: #07f773;
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .part1-aboutus {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .part1-text {
+    align-items: center;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .part1-imag {
+    min-width: 100%;
+  }
+
+  .btn-class {
+    justify-content: center;
+  }
+
+  .box-slides {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-slides a {
+    width: 80%; /* Adjusting width for smaller screens */
+    margin-bottom: 20px; /* Adding space between images */
+  }
+
+  .box-frame-video iframe {
+    width: 100%;
+    height: auto; /* Make video responsive */
+  }
 }
 
-.choices div a {
-  text-decoration: none;
-  color: #07f773;
-  position: relative;
-}
-.current {
-  color: black !important;
-}
-.choices div a:hover {
-  border-bottom: 2px solid black;
-  transition: 0.1s;
-}
+@media (max-width: 480px) {
+  .part1-text h1 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.left {
-  max-height: 300px;
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-}
-.banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.social {
-  margin-left: 20px;
-  margin-top: 40px;
-}
-hr {
-  margin: 10px 0px 10px 0px;
-  border: 1px solid white;
-}
-.banner h4 {
-  margin-bottom: 20px;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.left h4 {
-  color: white;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-.left img, .container, .left {
-  overflow: hidden !important;
-}
+  .part1-text p {
+    font-size: 0.9em; /* Adjust paragraph font size */
+  }
 
-footer {
-  background: #333333;
-  overflow: hidden;
+  #paragraphe-line {
+    padding-left: 15px; /* Adjust padding for smaller screens */
+  }
 }
