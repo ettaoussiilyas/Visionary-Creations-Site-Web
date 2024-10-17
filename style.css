@@ -78,8 +78,7 @@ button a {
   background-color: transparent;
 }
 
-.part1-imag a {
-  /* Ensure that the anchor tag does not affect the image size */
+.part1-imag a {  /* Ensure that the anchor tag does not affect the image size */
   display: block;
   width: 100%; /* Set width to the container */
 }
@@ -212,9 +211,7 @@ hr {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-.left img,
-.container,
-.left {
+.left img, .container, .left {
   overflow: hidden !important;
 }
 
@@ -222,35 +219,3 @@ footer {
   background: #333333;
   overflow: hidden;
 }
-/* 
-@media(min-width: 400px){
-    body{
-        max-width: 380px;
-    }
-}
-@media(min-width: 576px){
-    body{
-        max-width: 540px;
-    }
-}
-@media(min-width: 768px){
-    body{
-        max-width: 720px;
-
-    }
-}
-@media(min-width: 992px){
-    body{
-        max-width: 960px;
-    }
-}
-@media(min-width: 1200px){
-    body{
-        max-width: 100%;
-    }
-}
-@media(min-width: 1400px){
-    body{
-        max-width: 100%;
-    }
-} */
