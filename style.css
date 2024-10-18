@@ -373,7 +373,8 @@ margin-top: 20px;
 }
 
 .contact-social > ul {
-display: inline-flex;
+display: flex;
+justify-content: center;
 }
 
 .contact-social ul li a {
@@ -385,6 +386,7 @@ margin: 0 10px;
 padding-top: 7px;
 transition: all 0.4s ease 0s;
 width: 40px;
+color: #000000;
 }
 
 .contact-social ul li a:hover {
