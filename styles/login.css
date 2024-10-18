@@ -17,9 +17,6 @@ body {
 
 
 .contact-container{
-    background-image: url("/images/buildings.jpg");
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,8 +35,13 @@ body {
     text-align: center;
     padding: 20px;
     margin: 20px;
+    box-shadow: 5px 4px 20px 0px gray;
 }
-
+.inp{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
 .card input,
 .card textarea {
     width: 90%;
