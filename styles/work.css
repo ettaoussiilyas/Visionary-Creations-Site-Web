@@ -21,119 +21,12 @@ body {
   background: linear-gradient(to right, #07f773, #ffffff);
 }
 
-
-/* Sidebar Navigation Links Styling */
-.sidebar .choices {
-  display: flex;
-  flex-direction: column; /* Stack links vertically */
-  padding: 20px; /* Padding for links */
-}
-
-.sidebar .choices div {
-  padding: 10px; /* Add padding to links */
-  text-align: left; /* Align text to the left */
-}
-
-.sidebar .choices div a {
-  text-decoration: none; /* Remove underline */
-  color: #222; /* Link color */
-  font-size: 18px; /* Font size */
-  transition: background 0.3s; /* Smooth background transition */
-}
-
-.sidebar .choices div a:hover {
-  background: #f0f0f0; /* Background on hover */
-}
-
-/* End Side Bar */
-
-.home-section {
-  display: flex;
-  justify-content: space-between;
-  /* border: 1px solid red; */
-  /* flex-grow: 1; */
-}
-
-.home-section * {
-  margin-bottom: 35px;
-}
-
-.home-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  padding: 0 30px;
-  max-width: 40%;
-  /* border: 1px solid #000; */
-}
-
-.button-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-button.get-started {
-  padding: 10px;
-  width: 50%;
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  font-family: var(--font);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.img-container {
-  /* border: 1px solid green; */
-  width: 60%;
-  background-image: url("../imgs/medical-doctor.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Menu */
-
-nav {
-  /* background-color: var(--primary-color); */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  height: 100%;
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-li {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-  color: #222;
-}
-
-.social-links {
-  display: flex;
-  gap: 0.5rem;
-}
-.social-links a {
-  font-size: 1.2rem;
-}
+/* Work section */
 
 .work-section {
   display: flex;
   justify-content: space-between;
   height: 90vh;
-  /* flex-grow: 1; */
-  /* margin-bottom: 100px; */
 }
 
 .work-info {
@@ -153,7 +46,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid #000; */
 }
 
 .work-img > img {
@@ -162,66 +54,12 @@ a {
   height: 100%;
 }
 
-/* Stats */
-
-/* Stats Section */
-
-.stats {
-  background-color: hsla(216, 97%, 41%, 1);
-  color: white;
-  padding: 4rem;
-  text-align: center;
-  margin-top: 30px;
-}
-.stats h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-}
-.stat-item {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-}
-.stat-item:hover {
-  transform: translateY(-5px);
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-.stat-label {
-  font-size: 1rem;
-  opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-  .services,
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Main section */
 
 .main-section {
   background-color: #fff;
   padding-top: 30px;
   height: 100%;
-  /* border: 4px solid red; */
 }
 
 /* Examples Section */
@@ -229,7 +67,6 @@ a {
 .examples-container {
   display: flex;
   justify-content: space-evenly;
-  /* border: 1px solid #000; */
   padding: 100px 0;
   box-shadow: 2px rgba(255, 255, 255, 0.1);
   background-color: rgb(199, 199, 199);
@@ -239,7 +76,6 @@ a {
 }
 
 .example-img-container img {
-  /* border: 1px solid black; */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -263,7 +99,6 @@ a {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* border: 6px solid #000; */
 }
 
 .content-container {
@@ -296,11 +131,6 @@ span.divider {
   justify-content: flex-end;
 }
 
-#section-1 {
-  /* border-top-right-radius: 20px;
-  border-top-left-radius: 20px; */
-}
-
 #section-2 {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -308,7 +138,6 @@ span.divider {
 
 .section-title {
   min-width: 60%;
-  /* border: 1px solid #000; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -317,7 +146,6 @@ span.divider {
 }
 
 p.body {
-  /*width: 60%;*/
   font-size: 20px;
 }
 
@@ -336,7 +164,6 @@ p.body {
 #platform-description {
   display: flex;
   flex-direction: column;
-  /* max-width: 40%; */
 }
 
 .platform {
@@ -344,7 +171,6 @@ p.body {
   height: min-content;
   padding: 40px;
   margin: 60px 0;
-  /* border: 3px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,11 +190,9 @@ p.body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* border: 1px solid black; */
 }
 
 .examples-description .description {
-  /* border: 2px solid black; */
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -400,21 +224,16 @@ button.start-creating {
   max-height: 100vh;
   width: 100%;
   display: flex;
-  /* overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none; */
 }
 
 .work-left {
-  /* height: fit-content; */
   width: 40%;
   padding-left: 30px;
   background-color: #000;
-  /* overflow-y: scroll; */
 }
 
 #workflow-description * {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #workflow-description {
@@ -451,17 +270,11 @@ h4.subtitle {
 /* Workflow Right Side */
 
 .work-right {
-  /* height: 180%; */
-  /* border: 1px solid red; */
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* position: sticky;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%); */
 }
 
 .work-img {
@@ -478,7 +291,6 @@ button {
 
 .collab-section {
   width: 100%;
-  /* height: 90px; */
   padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
