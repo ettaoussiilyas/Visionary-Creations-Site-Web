@@ -138,7 +138,7 @@ button a {
   margin: 100px 0px 150px;
 }
 
-<<<<<<<<< Temporary merge branch 1
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   .part1-aboutus {
@@ -189,7 +189,8 @@ button a {
     padding-left: 15px; /* Adjust padding for smaller screens */
   }
 }
-========= .part1-aboutus {
+
+.part1-aboutus {
   position: relative;
   margin-top: 100px;
 }
