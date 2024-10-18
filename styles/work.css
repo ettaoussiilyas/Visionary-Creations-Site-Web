@@ -545,8 +545,8 @@ span.divider {
 }
 
 p.body {
-  width: 60%;
-  font-size: 18px;
+  /* width: 60%; */
+  font-size: 16px;
 }
 
 .section-container {
