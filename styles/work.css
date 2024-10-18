@@ -546,7 +546,7 @@ span.divider {
 
 p.body {
   /*width: 60%;*/
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .section-container {
@@ -628,9 +628,9 @@ button.start-creating {
   max-height: 100vh;
   width: 100%;
   display: flex;
-  overflow-y: scroll;
+  /* overflow-y: scroll;
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: none; */
 }
 
 .work-left {
@@ -679,7 +679,7 @@ h4.subtitle {
 /* Workflow Right Side */
 
 .work-right {
-  height: 180%;
+  /* height: 180%; */
   /* border: 1px solid red; */
   width: 60%;
   display: flex;
@@ -782,13 +782,14 @@ button {
   }
   .content-container {
     max-width: 90%;
+    margin-bottom: 30px;
   }
   .body-container {
     margin-top: 20px;
     justify-content: center;
   }
   .body-container p.body {
-    font-size: 22px;
+    /* font-size: 22px; */
   }
   .section-container {
     padding: 20px;
@@ -813,12 +814,21 @@ button {
   .section {
     height: fit-content;
   }
-
+  .work-section {
+    position: relative;
+    /* padding: 13vh; */
+    transform: translateY(13vh);
+    margin-bottom: 60px;
+  }
   .choices {
     flex-direction: column;
     align-items: center;
   }
 
+  .example-img {
+    height: 200px;
+  }
+  
   .examples-description {
     /* border: 2px solid red; */
     width: 100%;
@@ -829,7 +839,7 @@ button {
 
   .section-title {
     font-size: 24px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   p.body {
@@ -844,7 +854,13 @@ button {
   }
 
   .workflow-section {
+    height: fit-content;
+    width: 100%;
     flex-direction: column;
+  }
+
+  .work-left, .work-right {
+    width: 100%;
   }
 
   .workflow-section .description {
@@ -854,12 +870,21 @@ button {
   img.work-img {
     margin: 20px 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: none;
   }
 
+  .description {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  
   .platform {
     margin: 0;
   }
+  
   .creating-content {
+    margin-top: 100px;
     padding: 0;
   }
   .content-container {
@@ -894,11 +919,26 @@ button {
     font-size: 24px;
   }
 
-  .example-img {
-    width: auto; /* Allow images to maintain aspect ratio */
-    height: auto; /* Allow images to maintain aspect ratio */
+  .examples-container {
+    display: flex;
   }
 
+  .img-container {
+    margin: 0;
+  }
+
+  .example-img {
+    width: auto; 
+    height: 220px;
+}
+
+    .workflow-section {
+      padding: 0;
+    }
+  
+    #workflow-info {
+      margin-bottom: 0;
+    }
   .collab-section svg {
     width: 30px;
     height: 30px;
