@@ -78,7 +78,8 @@ button a {
   background-color: transparent;
 }
 
-.part1-imag a {  /* Ensure that the anchor tag does not affect the image size */
+.part1-imag a {
+  /* Ensure that the anchor tag does not affect the image size */
   display: block;
   width: 100%; /* Set width to the container */
 }
@@ -188,8 +189,7 @@ button a {
     padding-left: 15px; /* Adjust padding for smaller screens */
   }
 }
-=========
-.part1-aboutus {
+========= .part1-aboutus {
   position: relative;
   margin-top: 100px;
 }
@@ -200,13 +200,12 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   height: 100px;
   background-color: #07f773;
   padding: 0 5%;
-
 }
-nav .logo { 
+nav .logo {
   float: left;
   width: 40%;
   height: 100%;
@@ -237,7 +236,7 @@ nav .links a {
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-nav .links .active{
+nav .links .active {
   color: white;
 }
 nav .links a:hover {
@@ -261,8 +260,8 @@ nav .links a:hover::before {
   color: white;
 }
 #nav-toggle {
-   position: absolute;
-   top: -100px;
+  position: absolute;
+  top: -100px;
 }
 nav .icon-burger {
   display: none;
@@ -277,55 +276,109 @@ nav .icon-burger .line {
   background-color: #000000;
   margin: 5px;
   border-radius: 3px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   nav .logo {
-      float: none;
-      width: auto;
-      justify-content: center;
+    float: none;
+    width: auto;
+    justify-content: center;
   }
   nav .links {
-      float: none;
-      position: fixed;
-      z-index: 9;
-      left: 0;
-      right: 0;
-      top: 100px;
-      bottom: 100%;
-      width: auto;
-      height: auto;
-      flex-direction: column;
-      justify-content: space-evenly;
-      background-color: rgba(0, 0, 0, .8);
-      overflow: hidden;
-      transition: all .5s ease-in-out;
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
   }
   nav .links a {
-      font-size: 20px;
-      color: #07F773;
+    font-size: 20px;
+    color: #07f773;
   }
   nav .links a:hover {
-      color: #fff;
+    color: #fff;
   }
   nav :checked ~ .links {
-      bottom: 0;
+    bottom: 0;
   }
   nav .icon-burger {
-      display: block;
+    display: block;
   }
   nav :checked ~ .icon-burger .line:nth-child(1) {
-      transform: translateY(10px) rotate(225deg);
+    transform: translateY(10px) rotate(225deg);
   }
   nav :checked ~ .icon-burger .line:nth-child(3) {
-      transform: translateY(-10px) rotate(-225deg);
+    transform: translateY(-10px) rotate(-225deg);
   }
   nav :checked ~ .icon-burger .line:nth-child(2) {
-      opacity: 0;
+    opacity: 0;
   }
-  #nav-toggle:checked ~ .anchors{
-      color: #07F773;
+  #nav-toggle:checked ~ .anchors {
+    color: #07f773;
   }
-
 }
->>>>>>>>> Temporary merge branch 2
+
+.footer {
+  background: #07f773;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: gray;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
